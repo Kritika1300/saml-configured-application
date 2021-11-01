@@ -1,0 +1,76 @@
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.exe
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.deps.json
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.runtimeconfig.json
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.runtimeconfig.dev.json
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.dll
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.pdb
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.Views.dll
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.Views.pdb
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.AssemblyReference.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.AssemblyInfoInputs.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.AssemblyInfo.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.CoreCompileInputs.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.MvcApplicationPartsAssemblyInfo.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorAssemblyInfo.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorAssemblyInfo.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\staticwebassets\SSO_TEST.StaticWebAssets.Manifest.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\staticwebassets\SSO_TEST.StaticWebAssets.xml
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\scopedcss\bundle\SSO_TEST.styles.css
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.TagHelpers.input.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.TagHelpers.output.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorCoreGenerate.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorTargetAssemblyInfo.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorTargetAssemblyInfo.cs
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.Views.pdb
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.dll
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.pdb
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.genruntimeconfig.cache
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.CopyComplete
+D:\Personal\C#\ASP.NET CORE\ASP.NET-Core-Practice\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Home\AssertionConsumerService.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.exe
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.deps.json
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.runtimeconfig.json
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.runtimeconfig.dev.json
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.dll
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.pdb
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.Views.dll
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\SSO_TEST.Views.pdb
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.AssemblyReference.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.AssemblyInfoInputs.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.AssemblyInfo.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.CoreCompileInputs.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorAssemblyInfo.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorAssemblyInfo.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\staticwebassets\SSO_TEST.StaticWebAssets.Manifest.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\staticwebassets\SSO_TEST.StaticWebAssets.xml
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\scopedcss\bundle\SSO_TEST.styles.css
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.TagHelpers.input.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.TagHelpers.output.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorCoreGenerate.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Home\AssertionConsumerService.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorTargetAssemblyInfo.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.RazorTargetAssemblyInfo.cs
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.Views.pdb
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.dll
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.pdb
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.genruntimeconfig.cache
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\obj\Debug\netcoreapp3.1\SSO_TEST.csproj.CopyComplete
+C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\bin\Debug\netcoreapp3.1\Views\Properties\launchSettings.json
