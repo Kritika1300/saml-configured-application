@@ -26,14 +26,21 @@ namespace SSO_TEST
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            
-            services.ConfigureApplicationCookie(options =>
-             {
-                 options.Cookie.Name = ".SharedCookie";
-                 //options.Cookie.Domain = "example.com";
-                 options.DataProtectionProvider =
-                     DataProtectionProvider.Create(new DirectoryInfo("path-tokeys"));
-             });
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //});
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,10 +58,13 @@ namespace SSO_TEST
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+       
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

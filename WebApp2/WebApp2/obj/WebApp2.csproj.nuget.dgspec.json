@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj": {}
+    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj": {
+    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "projectUniqueName": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj",
         "projectName": "WebApp2",
-        "projectPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "projectPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj",
         "packagesPath": "C:\\Users\\kkaur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\obj\\",
+        "outputPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kkaur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "AspNetSaml": {
               "target": "Package",
               "version": "[1.2.4, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [

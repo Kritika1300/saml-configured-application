@@ -26,12 +26,10 @@ namespace WebApp2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.ConfigureApplicationCookie(options =>
+            services.AddMemoryCache();
+            services.AddSession(options =>
             {
                 options.Cookie.Name = ".SharedCookie";
-                //options.Cookie.Domain = "example.com";
-                options.DataProtectionProvider =
-                    DataProtectionProvider.Create(new DirectoryInfo("path-tokeys"));
             });
         }
 
@@ -50,6 +48,7 @@ namespace WebApp2
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 

@@ -44,6 +44,14 @@
               "target": "Package",
               "version": "[1.2.4, )"
             },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "System.Xml.ReaderWriter": {
               "target": "Package",
               "version": "[4.3.1, )"

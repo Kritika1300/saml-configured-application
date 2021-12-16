@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Saml;
 using SSO_TEST.Utility;
@@ -16,12 +17,12 @@ namespace WebApp2.Controllers
         string metadataFilePath;
         public HomeController()
         {
-            metadataFilePath = @"C:\Users\kkaur\Desktop\SAML\saml-configured-application\WebApp2\WebApp2\WebApp2\WebApp2.xml";
+            metadataFilePath = @"C:\Users\kkaur\Desktop\SAML\saml-configured-application\WebApp2\WebApp2\WebApp2.xml";
         }
 
         public IActionResult Index()
         {
-            var response = Request.Cookies["response"];
+            var response = HttpContext.Session.GetString("product");
             return View("Index",response);
 
         }
@@ -42,16 +43,16 @@ namespace WebApp2.Controllers
 
         [HttpPost]
         [Route("assertionconsumerserviceurl")]
-        public ActionResult AssertionConsumerService(Response model)
+        public ActionResult AssertionConsumerService()
         {
            
             var certificateContent = XmlHandler.GetNodeValue(metadataFilePath, "X509Certificate");
 
             string X509Certificate = $"{certificateContent}";
 
-            //Saml.Response samlResponse = new Response(X509Certificate, Request.Form["SAMLResponse"]);
+            Saml.Response samlResponse = new Response(X509Certificate, Request.Form["SAMLResponse"]);
 
-            Saml.Response samlResponse = model;
+           
 
             var username = "";
 

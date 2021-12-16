@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetSaml" Version="1.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

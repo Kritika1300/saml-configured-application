@@ -10,21 +10,34 @@ namespace SSO_TEST.Controllers
     public class HomeController : Controller
     {
 
+
+
         string metadataFilePath;
-       
+
         public HomeController()
         {
             metadataFilePath = @"C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\SAML.xml";
         }
 
+        //public IActionResult Index()
+        //{
+
+        //    HttpContext.Session.SetString("product", "laptop");
+
+        //    //Set("kay", "Hello from cookie", 10);
+
+        //    return View();
+        //}
+
+        const string SessionName = "_Name";
+        const string SessionAge = "_Age";
         public IActionResult Index()
         {
-
-          
-            //Set("kay", "Hello from cookie", 10);
-        
+            HttpContext.Session.SetString(SessionName, "Jarvik");
+            HttpContext.Session.SetInt32(SessionAge, 24);
             return View();
         }
+
 
         public void Set(string key, string value, int? expireTime)
         {
@@ -42,10 +55,11 @@ namespace SSO_TEST.Controllers
 
 
 
-        public ActionResult Login() {
-        
+        public IActionResult Login()
+        {
 
-            var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath,"SingleSignOnService","Location");
+
+            var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath, "SingleSignOnService", "Location");
 
             var request = new AuthRequest(
                 "https://localhost:44396",
@@ -56,7 +70,7 @@ namespace SSO_TEST.Controllers
         }
 
         [Route("assertionconsumerserviceurl")]
-        public ActionResult AssertionConsumerService()
+        public IActionResult AssertionConsumerService()
         {
 
             var certificateContent = XmlHandler.GetNodeValue(metadataFilePath, "X509Certificate");
@@ -67,7 +81,7 @@ namespace SSO_TEST.Controllers
 
             string res = samlResponse.Xml.ToString();
 
-            Set("response",res, 10);
+            Set("response", res, 10);
 
             var username = "";
 
@@ -80,12 +94,17 @@ namespace SSO_TEST.Controllers
             {
                 username = "Invalid";
             }
-     
+
+
+            username = HttpContext.Session.GetString("product");
+            //username = HttpContext.Session.Id;
+
             return View("AssertionConsumerService", username);
         }
 
- 
+
 
 
     }
 }
+
