@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2pVI86ztJ1EEsQvta9Of4Mk5SctCQfjmM6E4e7aCcvJkcMxrddU2QB0tpOTmsZU2aNxxAYOGD56fIwCO4gdL5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kkaur\\.nuget\\packages\\aspnetsaml\\1.2.4\\aspnetsaml.1.2.4.nupkg.sha512"
+  ],
+  "logs": []
+}

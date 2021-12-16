@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,6 +26,14 @@ namespace SSO_TEST
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
+            services.ConfigureApplicationCookie(options =>
+             {
+                 options.Cookie.Name = ".SharedCookie";
+                 //options.Cookie.Domain = "example.com";
+                 options.DataProtectionProvider =
+                     DataProtectionProvider.Create(new DirectoryInfo("path-tokeys"));
+             });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

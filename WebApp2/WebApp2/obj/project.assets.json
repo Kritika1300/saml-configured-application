@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AspNetSaml/1.2.4": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/Saml.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AspNetSaml/1.2.4": {
+      "sha512": "bgD7XRp0KzuGJeZLAWfwLb34EW5C/TMDBd6vgY/rBxcS1TsmEsul51R9/w47JCeQFbe+DdwIwjvJIcMN316FgA==",
+      "type": "package",
+      "path": "aspnetsaml/1.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetsaml.1.2.4.nupkg.sha512",
+        "aspnetsaml.nuspec",
+        "content/Saml.cs",
+        "contentFiles/any/any/Saml.cs"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "AspNetSaml >= 1.2.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kkaur\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj",
+      "projectName": "WebApp2",
+      "projectPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\WebApp2.csproj",
+      "packagesPath": "C:\\Users\\kkaur\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kkaur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "AspNetSaml": {
+            "target": "Package",
+            "version": "[1.2.4, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
