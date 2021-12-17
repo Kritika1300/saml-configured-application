@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\SSO_TEST\\SSO_TEST.csproj": {}
+    "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\SSO_TEST\\SSO_TEST.csproj": {
+    "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\SSO_TEST\\SSO_TEST.csproj",
+        "projectUniqueName": "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj",
         "projectName": "SSO_TEST",
-        "projectPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\SSO_TEST\\SSO_TEST.csproj",
-        "packagesPath": "C:\\Users\\kkaur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\SSO_TEST\\obj\\",
+        "projectPath": "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj",
+        "packagesPath": "C:\\Users\\sjaiswal\\.nuget\\packages\\",
+        "outputPath": "C:\\My Code\\SAML app\\SSO_TEST\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kkaur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sjaiswal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,6 +67,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -75,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
