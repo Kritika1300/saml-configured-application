@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApp2.Models;
+using WebApp2.Utility;
 
 namespace WebApp2.Controllers
 {
@@ -17,7 +18,7 @@ namespace WebApp2.Controllers
         string metadataFilePath;
         public HomeController()
         {
-            metadataFilePath = @"C:\Users\kkaur\Desktop\SAML\saml-configured-application\WebApp2\WebApp2\WebApp2.xml";
+            metadataFilePath = @"C:\My Code\SAML app\WebApp2\WebApp2\WebApp2.xml";
         }
 
         public IActionResult Index()
@@ -33,7 +34,7 @@ namespace WebApp2.Controllers
 
             var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath, "SingleSignOnService", "Location");
 
-            var request = new AuthRequest(
+            var request = new MyAuthRequest(
                 "https://localhost:44383",
                 "https://localhost:44383/assertionconsumerserviceurl"
              );
@@ -68,13 +69,5 @@ namespace WebApp2.Controllers
 
             return View("AssertionConsumerService", username);
         }
-
-        [Route("welcome")]
-        public IActionResult Welcome()
-        {
-            return View();
-        }
-
-
     }
 }

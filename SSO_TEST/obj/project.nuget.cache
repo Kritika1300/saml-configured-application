@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ta5eKtcI7hYwokg9NJOY0GUUFEOwPoeAevTnAfohQbE3Uhvq551IJCVGgRi8F9xBVFd0g+hiUNDbCg4EpUOvw==",
+  "dgSpecHash": "eFAi4OHS9H4w1G5xn4jDGjhN93A/httGmfub5E0dQpjXwrwOR+7yd5Sv7SDKmnjN7G0wHeK44zsVYq+EeM/IeQ==",
   "success": true,
   "projectFilePath": "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj",
   "expectedPackageFiles": [
@@ -54,10 +54,7 @@
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.xml.readerwriter\\4.3.1\\system.xml.readerwriter.4.3.1.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
   ],
   "logs": []
 }

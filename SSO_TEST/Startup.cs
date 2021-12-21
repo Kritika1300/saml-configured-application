@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SSO_TEST.Utility;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,11 +31,19 @@ namespace SSO_TEST
             services.AddControllersWithViews();
             services.AddDistributedMemoryCache();
 
+            services.AddAuthentication(sharedOptions =>
+            {
+                sharedOptions.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                sharedOptions.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                //sharedOptions.DefaultChallengeScheme = WsFederationDefaults.AuthenticationScheme;
+            }).AddCookie();
+
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(10);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
+                options.Cookie.Name = ".SharedCookie";
             });
 
             //services.Configure<CookiePolicyOptions>(options =>
@@ -62,6 +73,7 @@ namespace SSO_TEST
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSession();

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj": {}
+    "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\WebApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj": {
+    "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\WebApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "projectUniqueName": "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\WebApp2.csproj",
         "projectName": "WebApp2",
-        "projectPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\WebApp2.csproj",
-        "packagesPath": "C:\\Users\\kkaur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kkaur\\Desktop\\SAML\\saml-configured-application\\WebApp2\\WebApp2\\obj\\",
+        "projectPath": "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\WebApp2.csproj",
+        "packagesPath": "C:\\Users\\sjaiswal\\.nuget\\packages\\",
+        "outputPath": "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kkaur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sjaiswal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,6 +59,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -67,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

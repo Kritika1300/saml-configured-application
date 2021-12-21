@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Saml;
@@ -16,7 +17,7 @@ namespace SSO_TEST.Controllers
 
         public HomeController()
         {
-            metadataFilePath = @"C:\Users\kkaur\Desktop\SAML\saml-configured-application\SSO_TEST\SAML.xml";
+            metadataFilePath = @"C:\My Code\SAML app\SSO_TEST\SSO_Test.xml";
         }
 
         //public IActionResult Index()
@@ -33,11 +34,11 @@ namespace SSO_TEST.Controllers
         const string SessionAge = "_Age";
         public IActionResult Index()
         {
-            HttpContext.Session.SetString(SessionName, "Jarvik");
-            HttpContext.Session.SetInt32(SessionAge, 24);
+            //var sessionId = HttpContext.Session.Id;
+            //HttpContext.Session.SetString(SessionName, "Jarvik");
+            //HttpContext.Session.SetInt32(SessionAge, 24);
             return View();
         }
-
 
         public void Set(string key, string value, int? expireTime)
         {
@@ -81,8 +82,11 @@ namespace SSO_TEST.Controllers
 
             string res = samlResponse.Xml.ToString();
 
-            Set("response", res, 10);
+            //var sessionId = HttpContext.Session.Id;
+            //HttpContext.Session.SetString(SessionName, res);
 
+            //Set("response", res, 10);
+            
             var username = "";
 
             if (samlResponse.IsValid())
@@ -95,15 +99,21 @@ namespace SSO_TEST.Controllers
                 username = "Invalid";
             }
 
-
-            username = HttpContext.Session.GetString("product");
+            //sessionId = HttpContext.Session.Id;
+            //string temp = HttpContext.Session.GetString(SessionName);
             //username = HttpContext.Session.Id;
 
             return View("AssertionConsumerService", username);
         }
 
+        public IActionResult Logout()
+        {
+            var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath, "SingleLogoutService", "Location");
+            
+            Redirect(idpEndPoint);
 
-
+            return View("Index");
+        }
 
     }
 }
