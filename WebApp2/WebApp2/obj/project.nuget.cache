@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0qP1urZ45teNSwF/k2PVcyqeMXwMzUks1F/cNwQTjv9O5yq/d9uAR2OdjLYNVrfwePe6biVupNZW2zzjN2HsCg==",
+  "dgSpecHash": "AJRMOdrxBwAD+SlVrrPIr8UCduGtto+ZE7YCoZzuqP525g5RnZo3lgzwDfxl2POnLFCH3Swc/GkU4fu1rpMzLA==",
   "success": true,
   "projectFilePath": "C:\\My Code\\SAML app\\WebApp2\\WebApp2\\WebApp2.csproj",
   "expectedPackageFiles": [
@@ -32,8 +32,7 @@
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.security.cryptography.xml\\4.5.0\\system.security.cryptography.xml.4.5.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+    "C:\\Users\\sjaiswal\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

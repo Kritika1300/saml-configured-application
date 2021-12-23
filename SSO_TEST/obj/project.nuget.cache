@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eFAi4OHS9H4w1G5xn4jDGjhN93A/httGmfub5E0dQpjXwrwOR+7yd5Sv7SDKmnjN7G0wHeK44zsVYq+EeM/IeQ==",
+  "dgSpecHash": "b001XnFCE7T1gtRbasiMZaET4qjpebrcSGgWYR2fW2s4anlB/H/437//dmryd4JoYRu1f5oeNdQBf2lNeCRChg==",
   "success": true,
   "projectFilePath": "C:\\My Code\\SAML app\\SSO_TEST\\SSO_TEST.csproj",
   "expectedPackageFiles": [
@@ -53,8 +53,7 @@
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\sjaiswal\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\system.xml.readerwriter\\4.3.1\\system.xml.readerwriter.4.3.1.nupkg.sha512",
-    "C:\\Users\\sjaiswal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+    "C:\\Users\\sjaiswal\\.nuget\\packages\\system.xml.readerwriter\\4.3.1\\system.xml.readerwriter.4.3.1.nupkg.sha512"
   ],
   "logs": []
 }
