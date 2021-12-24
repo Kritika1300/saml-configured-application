@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,9 +28,16 @@ namespace WebApp2
         {
             services.AddControllersWithViews();
             services.AddMemoryCache();
-            services.AddSession(options =>
+            //services.AddSession(options =>
+            //{
+            //    options.Cookie.Name = ".SharedCookie";
+            //});
+
+            services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.Name = ".SharedCookie";
+                options.DataProtectionProvider =
+                DataProtectionProvider.Create(new DirectoryInfo("path-tokeys"));
             });
         }
 
@@ -48,10 +56,11 @@ namespace WebApp2
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseSession();
+            //app.UseSession();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

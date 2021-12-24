@@ -38,12 +38,18 @@ namespace SSO_TEST
                 //sharedOptions.DefaultChallengeScheme = WsFederationDefaults.AuthenticationScheme;
             }).AddCookie();
 
-            services.AddSession(options =>
+            //services.AddSession(options =>
+            //{
+            //    options.IdleTimeout = TimeSpan.FromMinutes(10);
+            //    options.Cookie.HttpOnly = true;
+            //    options.Cookie.IsEssential = true;
+            //});
+
+            services.ConfigureApplicationCookie(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(10);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
                 options.Cookie.Name = ".SharedCookie";
+                options.DataProtectionProvider =
+                DataProtectionProvider.Create(new DirectoryInfo("path-tokeys"));
             });
 
             //services.Configure<CookiePolicyOptions>(options =>
@@ -76,7 +82,7 @@ namespace SSO_TEST
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseSession();
+            //app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Saml;
@@ -23,9 +25,22 @@ namespace WebApp2.Controllers
 
         public IActionResult Index()
         {
-            var response = HttpContext.Session.GetString("product");
-            return View("Index",response);
+            return View("Index");
 
+        }
+
+        public void Set(string key, string value, int? expireTime)
+        {
+            CookieOptions option = new CookieOptions();
+
+
+
+            if (expireTime.HasValue)
+                option.Expires = DateTime.Now.AddMinutes(expireTime.Value);
+            else
+                option.Expires = DateTime.Now.AddMilliseconds(10);
+
+            Response.Cookies.Append(key, value, option);
         }
 
         public ActionResult Login()
@@ -39,7 +54,12 @@ namespace WebApp2.Controllers
                 "https://localhost:44383/assertionconsumerserviceurl"
              );
 
-            return Redirect(request.GetRedirectUrl(idpEndPoint));
+            if (HttpContext.Request.Cookies["loggedIn"] == "true")  //(User.Identity.IsAuthenticated)
+            {
+                return Redirect(request.GetRedirectUrl(idpEndPoint));
+            }
+
+            return Redirect(request.GetRedirectUrl2(idpEndPoint));
         }
 
         [HttpPost]
@@ -53,7 +73,8 @@ namespace WebApp2.Controllers
 
             Saml.Response samlResponse = new Response(X509Certificate, Request.Form["SAMLResponse"]);
 
-           
+            Set("loggedIn", "true", 20);
+
 
             var username = "";
 
@@ -68,6 +89,13 @@ namespace WebApp2.Controllers
             }
 
             return View("AssertionConsumerService", username);
+        }
+
+        public IActionResult Logout()
+        {
+            var login = HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            Set("loggedIn", "false", 20);
+            return RedirectToAction("Index");
         }
     }
 }

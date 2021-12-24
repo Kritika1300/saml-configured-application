@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Saml;
 using SSO_TEST.Utility;
 using System;
+using WebApp2.Utility;
 
 namespace SSO_TEST.Controllers
 {
@@ -34,9 +37,6 @@ namespace SSO_TEST.Controllers
         const string SessionAge = "_Age";
         public IActionResult Index()
         {
-            //var sessionId = HttpContext.Session.Id;
-            //HttpContext.Session.SetString(SessionName, "Jarvik");
-            //HttpContext.Session.SetInt32(SessionAge, 24);
             return View();
         }
 
@@ -62,12 +62,17 @@ namespace SSO_TEST.Controllers
 
             var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath, "SingleSignOnService", "Location");
 
-            var request = new AuthRequest(
+            var request = new MyAuthRequest(
                 "https://localhost:44396",
                 "https://localhost:44396/assertionconsumerserviceurl"
              );
 
-            return Redirect(request.GetRedirectUrl(idpEndPoint));
+            if (HttpContext.Request.Cookies["loggedIn"] == "true")   //(User.Identity.IsAuthenticated)
+            {
+                return Redirect(request.GetRedirectUrl(idpEndPoint));
+            }
+
+            return Redirect(request.GetRedirectUrl2(idpEndPoint));
         }
 
         [Route("assertionconsumerserviceurl")]
@@ -80,12 +85,9 @@ namespace SSO_TEST.Controllers
 
             Saml.Response samlResponse = new Response(X509Certificate, Request.Form["SAMLResponse"]);
 
+            Set("loggedIn", "true", 20);
+
             string res = samlResponse.Xml.ToString();
-
-            //var sessionId = HttpContext.Session.Id;
-            //HttpContext.Session.SetString(SessionName, res);
-
-            //Set("response", res, 10);
             
             var username = "";
 
@@ -99,20 +101,14 @@ namespace SSO_TEST.Controllers
                 username = "Invalid";
             }
 
-            //sessionId = HttpContext.Session.Id;
-            //string temp = HttpContext.Session.GetString(SessionName);
-            //username = HttpContext.Session.Id;
-
             return View("AssertionConsumerService", username);
         }
 
         public IActionResult Logout()
         {
-            var idpEndPoint = XmlHandler.GetAttributeValue(metadataFilePath, "SingleLogoutService", "Location");
-            
-            Redirect(idpEndPoint);
-
-            return View("Index");
+            var login = HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            Set("loggedIn", "false", 20);
+            return RedirectToAction("Index");
         }
 
     }
