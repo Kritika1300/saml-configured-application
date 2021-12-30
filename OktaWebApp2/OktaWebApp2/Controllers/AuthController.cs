@@ -49,7 +49,7 @@ namespace OktaWebApp2.Controllers
 
             if (HttpContext.Request.Cookies["loggedIn"] == "true")
             {
-                saml2req.IsPassive = true;
+                //saml2req.IsPassive = true;
             }
 
             return binding.Bind(saml2req).ToActionResult();
