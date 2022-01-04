@@ -89,7 +89,6 @@ C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\OktaSamlApp.
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\OktaSamlApp.RazorCoreGenerate.cache
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Claims.cshtml.g.cs
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\My Code\SAML app\OktaSamlApp\OktaSamlApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs

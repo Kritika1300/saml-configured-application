@@ -3,6 +3,9 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <a href="https://localhost:44347/login" >Redirect to OKTA WEB APP 2</a>
+    <h1 class="display-4">Welcome to Web Application 1</h1>
+    @if (((System.Security.Claims.ClaimsIdentity)User.Identity).IsAuthenticated)
+    {
+        <a href="https://localhost:44347/login" >Redirect to WEB APPLICATION 2</a>
+    }
 </div>
