@@ -3,8 +3,10 @@
     "",
     "\\OktaSamlApp",
     "\\OktaSamlApp\\OktaSamlApp",
-    "\\OktaSamlApp\\OktaSamlApp\\Controllers"
+    "\\OktaSamlApp\\OktaSamlApp\\Controllers",
+    "\\OktaSamlApp\\OktaSamlApp\\Views",
+    "\\OktaSamlApp\\OktaSamlApp\\Views\\Home"
   ],
-  "SelectedNode": "\\OktaSamlApp\\OktaSamlApp\\Controllers\\AuthController.cs",
+  "SelectedNode": "\\OktaSamlApp\\OktaSamlApp\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

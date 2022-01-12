@@ -24,20 +24,6 @@ namespace OktaSamlApp.Controllers
             config = configAccessor.Value;
         }
 
-        public void Set(string key, string value, int? expireTime)
-        {
-            CookieOptions option = new CookieOptions();
-
-
-
-            if (expireTime.HasValue)
-                option.Expires = DateTime.Now.AddMinutes(expireTime.Value);
-            else
-                option.Expires = DateTime.Now.AddMilliseconds(10);
-
-            Response.Cookies.Append(key, value, option);
-        }
-
 
         [Route("Login")]
         public IActionResult Login(string returnUrl = null)
@@ -46,11 +32,6 @@ namespace OktaSamlApp.Controllers
             binding.SetRelayStateQuery(new Dictionary<string, string> { { relayStateReturnUrl, returnUrl ?? Url.Content("~/") } });
 
             var saml2req = new Saml2AuthnRequest(config);
-
-            if (HttpContext.Request.Cookies["loggedIn"] == "true")
-            {
-                //saml2req.IsPassive = true;
-            }
 
             return binding.Bind(saml2req).ToActionResult();
         }
@@ -72,8 +53,6 @@ namespace OktaSamlApp.Controllers
             var relayStateQuery = binding.GetRelayStateQuery();
             var returnUrl = relayStateQuery.ContainsKey(relayStateReturnUrl) ? relayStateQuery[relayStateReturnUrl] : Url.Content("~/");
 
-            Set("loggedIn", "true", 20);
-
             return Redirect(returnUrl);
         }
 
@@ -88,8 +67,6 @@ namespace OktaSamlApp.Controllers
 
             var binding = new Saml2PostBinding();
             var saml2LogoutRequest = await new Saml2LogoutRequest(config, User).DeleteSession(HttpContext);
-
-            Set("loggedIn", "false", 20);
 
             return Redirect("~/");
         }
